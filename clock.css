@@ -1,0 +1,94 @@
+body
+{
+	background:radial-gradient(rgba(255,200,0,1),black);
+	text-align: center;
+}
+
+.clock
+{
+	height: 400px;
+	width: 400px;
+	background-image: linear-gradient(#a56060a6,#605363);
+	border-radius: 100%;
+	border:30px solid;
+	margin:auto;
+	margin-top: 100px;
+	position: relative;
+}
+/*============================numbers========================*/
+.number
+{
+	height: 400px;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: 800;
+	font-size: 25px;
+	transform: rotate(calc(var(--s)*1deg));
+}
+.num1{--s:30;}
+.num2{--s:60;}
+.num3{--s:90;}
+.num4{--s:120;}
+.num5{--s:150;}
+.num6{--s:180;}
+.num7
+{
+	--s:210;
+
+}
+.num8{--s:240;}
+.num9{--s:270;}
+.num10{--s:300;}
+.num11{--s:330;}
+.num12{--s:360;}
+
+
+
+/*==========================kate========================*/
+.kata
+{
+	--s:0;
+	left: 50%;
+	bottom:50%;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	position: absolute;
+	transform-origin: bottom;
+	transform: translate(-50%)rotate(calc(var(--s)*1deg));
+}
+.clock>.hour
+{
+	height: 30%;
+	width: 5px;
+	background-color: #2d5a56;
+}
+.clock>.min
+{
+	height: 35%;
+	width: 7px;
+	background-color: #693a3a;
+}
+.clock>.sec
+{
+	height: 40%;
+	width: 10px;
+	background-color: #374482;
+}
+/*=========================point=======================*/
+.point
+{
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	left: 50%;
+	bottom: 50%;
+	background-color: black;
+	border-radius: 100%;
+	transform: translate(-50% , 50%);
+}
+.clock:hover
+{
+	background-color: blue;
+}
